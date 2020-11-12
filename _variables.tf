@@ -5,7 +5,12 @@ variable "name" {
   description = "Name of this EKS cluster"
 }
 
-variable "version" {
+variable "eks_version" {
+  default = "1.18"
+  description = "Version of this EKS cluster"
+}
+
+variable "cluster_arn" {
   default = "1.18"
   description = "Version of this EKS cluster"
 }
