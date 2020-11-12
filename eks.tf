@@ -1,7 +1,7 @@
 resource "aws_eks_cluster" "default" {
   name     = var.name
   version  = var.eks_version
-  role_arn = aws_iam_role.default.arn
+  role_arn = var.cluster_arn
 
   vpc_config {
     subnet_ids              = flatten([var.subnet_ids])

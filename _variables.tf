@@ -1,6 +1,7 @@
 # == REQUIRED VARS
 
 variable "name" {
+  default = "eks"
   description = "Name of this EKS cluster"
 }
 
